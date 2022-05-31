@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+button{
+    font-family: avenir;
+    font-size: 20px;
+    margin: 10px;
+    height: 70px;
+    width: 130px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transform: rotate3d(1, 0, 0, 30deg);
+    background-color: #93ede0;
+    box-shadow: 0px 19px 0px #93d4f5,0px 20px 8px 1px black;
+}
+button:focus {
+    border: none;
+    outline: none;
+}
+button:active{
+    position: relative;
+    box-shadow: 0 9px 0 #93d4f5,0px 9px 5px black;
+    top: 10px;
+}
+.statContainer{ 
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttonContainer{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    background-color: #d2fcf6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* DICE  */
+.diceContainer{
+    width: 200px;
+    height: 200px;
+    margin: 80px;
+    perspective: 400px;
+}
+#dice{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px) rotateX(-45deg) rotateY(-45deg);
+    transition: all 0.5s;
+}
+.cubeFace{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: #4dd8ff;
+    opacity: 0.7;
+}
+.cubeFace--front{
+    transform: rotateY(0deg) translateZ(100px);
+}
+.cubeFace--right{
+    transform: rotateY(90deg) translateZ(100px);
+}
+.cubeFace--back{
+    transform: rotateY(180deg) translateZ(100px);
+}
+.cubeFace--left{
+    transform: rotateY(-90deg) translateZ(100px);
+}
+.cubeFace--top{
+    transform: rotateX(90deg) translateZ(100px);
+}
+.cubeFace--bottom{
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.cubeFace--front::before{   /* 1 */
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    left: 80px;
+    top: 80px;
+}
+.cubeFace--right::before{  /* 5 */
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    left: 80px;
+    top: 80px;
+    box-shadow: 60px 60px 0px, -60px -60px 0px, 60px -60px 0px, -60px 60px 0px;
+}
+.cubeFace--back::before{   /* 6 */
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    left: 30px;
+    top: 80px;
+    box-shadow: 100px 60px 0px, 0px -60px 0px, 100px -60px 0px, 0px 60px 0px, 100px 0px 0px;
+}
+.cubeFace--left::before{   /* 2 */
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    left: 30px;
+    top: 30px;
+    box-shadow: 100px 100px 0px;
+}
+.cubeFace--top::before{   /* 3 */
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    left: 80px;
+    top: 80px;
+    box-shadow: 60px 60px 0px, -60px -60px 0px;
+}
+.cubeFace--bottom::before{   /* 4 */
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    left: 30px;
+    top: 30px;
+    box-shadow: 100px 0px 0px, 100px 100px 0px, 0px 100px 0px;
+}

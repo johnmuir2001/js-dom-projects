@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../globalStyles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <div id="goHomeWrap">
+        <a id="goHomeLink" href="../../../index.html">Go Home</a>
+        <img id="goHomeArrow" src="../../../images/arrow-icon.png"/>
+    </div> 
+    <h1 class="title">Rock, Paper, Scissors</h1>
+    <div class="scoresWrap">
+        <div>
+            <h3>Win</h3>
+            <h1 id="playerScore">0</h1>
+        </div>
+        <div>
+            <h3>Ties</h3>
+            <h1 id="ties">0</h1>
+        </div>
+        <div>
+            <h3>Win</h3>
+            <h1 id="computerScore">0</h1>
+        </div>
+
+    </div>
+    <div class="gameWrapper">
+        <div class="player">
+            <div class="playerImageWrap">
+                <img id="playerImage" src="./images/rockHand.png" alt="image">
+            </div>
+            <div class="buttonWrap">
+                <button class="button" id="rock" onClick="play('rock')">
+                    <img src="./images/rockIcon.png" alt="rock">
+                </button>
+                <button class="button" id="paper" onClick="play('paper')">
+                    <img src="./images/paperIcon.png" alt="paper">
+                </button>
+                <button class="button" id="scissors" onClick="play('scissors')">
+                    <img src="./images/scissorsIcon.png" alt="scissors">
+                </button>
+            </div>
+        </div>
+        <div class="middleBox">
+            <h2>Rounds</h2>
+            <h1 id="rounds">0</h1>
+            <h3 id="outcome">Let's Play!</h3>
+        </div>
+        <div class="computer">
+            <div class="computerImageWrap">
+                <img id="computerImage" src="./images/rockHand.png" alt="image">
+            </div>
+            
+            <div class="compFiller"></div>
+        </div>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

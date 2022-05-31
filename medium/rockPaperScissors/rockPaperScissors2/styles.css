@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.title{
+    width: 700px;
+    text-align: center;
+    color: #0055ff;
+}
+.scoresWrap{
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    margin: 20px 0;
+}
+.scoresWrap div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scoresWrap div h3{
+    color: rgb(175, 175, 175);
+    margin: 5px 0;
+}
+.scoresWrap div h1 {
+    margin: 5px 0;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.gameWrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    width: 700px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.playerImageWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px;
+    width: 250px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.middleBox{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.middleBox h2{
+    color: #0055ff;
+}
+.middleBox h1{
+    font-weight: 300;
+    font-size: 35px;
+    margin: 0px 0 30px 0;
+}
+
+
+.computer {
+    border: 1px solid rgb(219, 219, 219);
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.computerImageWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+    width: 250px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#computerImage{
+    transform: scaleX(-1);
+}
+.compFiller {
+    height: 98px;
+    width: 250px;
+}
+.button{
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    background-color: #0055ff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #0066ff;
+}
+.button:active {
+    background-color: #003cff;
+}
+.button > img {
+    filter: invert(1);
+    width: 30px;
+}
+#rock > img, #paper > img {
+    transform: translateX(-1px)
+}
+
+.buttonWrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.handLeftAnimation{
+    transform-origin: left;
+    animation: shakeLeft 0.3s forwards;
+}
+
+@keyframes shakeLeft {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+}
+
+.handRightAnimation{
+    animation: shakeRight 0.3s forwards;
+    transform-origin: right;
+}
+
+@keyframes shakeRight {
+    0%, 100% {
+        transform: rotate(0deg) scaleX(-1) translateX(100%);
+    }
+    50%{
+        transform: rotate(20deg) scaleX(-1) translateX(100%);
+    }
+}

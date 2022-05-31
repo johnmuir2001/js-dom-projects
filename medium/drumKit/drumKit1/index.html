@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../globalStyles.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Drum Kit 1</title>
+</head>
+<body>
+    <div id="goHomeWrap">
+        <a id="goHomeLink" href="../../../index.html">Go Home</a>
+        <img id="goHomeArrow" src="../../../images/arrow-icon.png"/>
+    </div> 
+    <div>
+        <button data-drumsound="boom" data-key="KeyA" class="drum">a<br> <span>boom</span> </button>
+        <button data-drumsound="clap" data-key="KeyS" class="drum">s<br> <span>clap</span> </button>
+        <button data-drumsound="hihat" data-key="KeyD" class="drum">d<br> <span>hihat</span> </button>
+        <button data-drumsound="kick" data-key="KeyF" class="drum">f<br> <span>kick</span> </button>
+        <button data-drumsound="openhat" data-key="KeyG" class="drum">g<br> <span>openhat</span> </button>
+        <button data-drumsound="ride" data-key="KeyH" class="drum">h<br> <span>ride</span> </button>
+        <button data-drumsound="snare" data-key="KeyJ" class="drum">j<br> <span>snare</span> </button>
+        <button data-drumsound="tink" data-key="KeyK" class="drum">k<br> <span>tink</span> </button>
+        <button data-drumsound="tom" data-key="KeyL" class="drum">l<br> <span>tom</span> </button>
+    </div>
+
+    <audio data-drumSound="boom" data-key="KeyA" src="../sounds/boom.wav"></audio>
+    <audio data-drumSound="clap" data-key="KeyS" src="../sounds/clap.wav"></audio>
+    <audio data-drumSound="hihat" data-key="KeyD" src="../sounds/hihat.wav"></audio>
+    <audio data-drumSound="kick" data-key="KeyF" src="../sounds/kick.wav"></audio>
+    <audio data-drumSound="openhat" data-key="KeyG" src="../sounds/openhat.wav"></audio>
+    <audio data-drumSound="ride" data-key="KeyH" src="../sounds/ride.wav"></audio>
+    <audio data-drumSound="snare" data-key="KeyJ" src="../sounds/snare.wav"></audio>
+    <audio data-drumSound="tom" data-key="KeyK" src="../sounds/tom.wav"></audio>
+    <audio data-drumSound="tink" data-key="KeyL" src="../sounds/tink.wav"></audio>
+
+    <script src="./script.js"></script>
+</body>
+</html>

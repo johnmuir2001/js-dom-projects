@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+section {
+    text-align: center;
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 30px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+}
+.cell > img {
+    height: 80px;
+    width: 80px;
+}
+
+.game--restart{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #03bafc;
+    border: 1px solid #038cfc;
+    color: white;
+    font-family: avenir;
+}
+
+@media screen and (max-width: 650px){
+    body {
+        font-family: 'Sigmar One', cursive;
+        background-color: #70eaff;
+        padding: 10px 0 0 0;
+    }
+    #CNLogo{
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 0px;
+        top: 0;
+        transform: translateX(0%);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        z-index: 20;
+    }
+      
+    #CNLogo > img{
+        height: 15px;
+        padding: 5px 10px;
+    }
+}

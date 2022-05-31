@@ -1,0 +1,27 @@
+body {
+    margin: 150px;
+}
+
+input {
+    padding: 10px 15px;
+    font-family: avenir;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-family: avenir;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    background-color: #03bafc;
+    border: 1px solid #038cfc;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #61d5ff;
+    border: 1px solid #03bafc;
+}

@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(241, 241, 241);
+    margin: 0 50px;
+}
+
+.blackjackTable{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#dealersHand, #playersHand {
+    height: 220px;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+  font-size: 20px;
+  width: 7em;
+  height: 10em;
+  background-color: #ffffff;
+  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.15);
+  border-radius: 0.25em;
+  animation: cardDealt 0.5s forwards;
+}
+
+@keyframes cardDealt {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.red{
+    color: red;
+}
+
+.black{
+    color: black;
+}
+
+.back {
+    position: relative;
+    background-color: rgb(0, 174, 255);
+    width: 7em;
+    height: 10em;
+    border-radius: 0.25em;
+    z-index: 1;
+}
+.back::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0.8em;
+    left: 0.8em;
+    height: 8em;
+    width: 5em;
+    border-radius: 0.25em;
+    border: 0.2em solid white;
+}
+
+.hidden{
+    display: none;
+}
+
+.top-left {
+    position: absolute;
+    top: 0.5em;
+    left: 0.75em;
+}
+.top-left > div {
+    text-align: center;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.75em;
+    transform: rotate(180deg);
+}
+.bottom-right > div {
+    text-align: center;
+}

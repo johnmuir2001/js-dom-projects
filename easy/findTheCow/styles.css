@@ -1,0 +1,17 @@
+#cow {
+    height: 80px;
+    width: 70px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 10;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0.4;
+}

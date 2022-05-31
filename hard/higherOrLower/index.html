@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../globalStyles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Higher or Lower</title>
+</head>
+<body>
+    <div id="goHomeWrap">
+        <a id="goHomeLink" href="../../index.html">Go Home</a>
+        <img id="goHomeArrow" src="../../images/arrow-icon.png"/>
+    </div> 
+    <h1>Higher or Lower</h1>
+    <h3>Score: <span id="score">0</span></h3>
+    <section id="cards">
+        <div id="currentCard"></div>
+        <div id="nextCard"></div>
+    </section>
+    <h2>Do you think the next card will be Higher or Lower?</h2>
+    <div id="buttonContainer">
+        <button onclick="guess('higher')">Higher</button>
+        <button onclick="guess('lower')">Lower</button>
+    </div>
+    <h4>Rules</h4>
+    <ul>
+        <li>Guess if the next card is higher or lower than the current card</li>
+        <li>Aces count as 1, Jacks are 11, Queens are 12, and Kings are 13</li>
+        <li>If there are two of a kind (two Aces), you lose</li>
+    </ul>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

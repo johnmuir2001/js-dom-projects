@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./globalStyles.css"></link>
+    <title>JS DOM Challenges</title>
+</head>
+<body>
+    <h1>JS DOM Challenges</h1>
+    <div>
+        <h2>Easy</h2>
+        <p>Good projects to start with and get used to basic DOM manipulation</p>
+        <button class="accordion">Key Code</button>
+        <div class="panel">
+            <p>When a key is pressed on the page, the browser shows the selected keys key, code, and character code.</p>
+            <a href="./easy/keycode/index.html">Key Code Demo</a>
+        </div>
+        <button class="accordion">Find the Cow</button>
+        <div class="panel">
+            <p>An image of a cow (or animal of your choice) is positioned randomly on the page. The user must click the cow to catch it. However, as the user hovers over the cow the image is randomly assigned a new position after a slight delay giving the user a small chance to click on the cow.</p>
+            <a href="./easy/findTheCow/index.html">Find the Cow Demo</a>
+        </div>
+        <button class="accordion">Guess The Number</button>
+        <div class="panel">
+            <p>The user inputs a number as a guess for a generated random number within a given range. Then the result is shown after the user clicks a button. If the user guessed too high or too low then display the appropriate message. If the user guesses the correct number then display a winning message and generate a new number so the user can keep playing.</p>
+            <a href="./easy/guessNumber/index.html">Guess The Number Demo</a>
+        </div>
+    </div>
+    <div>
+        <h2>Medium</h2>
+        <p>Projects that require a bit more thought and require more Javascript to make a functional app</p>
+        <button class="accordion">The Reaction Game</button>
+        <div class="panel">
+            <p>The user clicks a button to start the game. The screen then changes colour to show the game has started. after a random amount of time the screen changes colour. The user must click page as fast as possible.</p>
+            <a href="./medium/reactionGame/index.html">Reaction Game Demo</a>
+        </div>
+        <button class="accordion">Colour Guesser</button>
+        <div class="panel">
+            <p>The user is shown 6 blocks each with a random background colour. The user is also shown an rgb value, that rgb value is the same colour as one of the 6 blocks. The user must match the colour to the rgb value. Then generate anew rgb value and 6 new colours to select from.</p>
+            <a href="./medium/colourGuesser/index.html">Colour Guesser Demo</a>
+        </div>
+        <button class="accordion">Drum Kit</button>
+        <div class="panel">
+            <p>User will be able to click buttons in order to play the corresponding drum sound. The user should also be able to use the keyboard so that some keys when clicked play a drum sound. The finished product should be a playable drum kit.</p>
+            <a href="./medium/drumKit/drumKit1/index.html">Drum Kit Demo 1</a>
+            <a href="./medium/drumKit/drumKit2/index.html">Drum Kit Demo 2</a>
+        </div>
+        <button class="accordion">Tic-Tac-Toe</button>
+        <div class="panel">
+            <p>Everyone knows the classic puzzle game where a user tries to get 3 Xs or Os in a row inside a 3x3 grid. This is primarily a 2 player game but you can try to make a play against the computer function so users don't need a second person to play along.</p>
+            <a href="./medium/ticTacToe/index.html">Tic-Tac-Toe Demo 1</a>
+        </div>
+        <button class="accordion">Rock, Paper, Scissors</button>
+        <div class="panel">
+            <p>Users can select either rock, paper, or scissors to play against a computer and keep track of how many wins/draws the user and computer have. The rules are simple rock beats scissors, scissors beats paper, and paper beats rock.</p>
+            <a href="./medium/rockPaperScissors/rockPaperScissors1/index.html">Rock, Paper, Scissors Demo 1</a>
+            <a href="./medium/rockPaperScissors/rockPaperScissors2/index.html">Rock, Paper, Scissors Demo 2</a>
+        </div>
+    </div>
+    <div>
+        <h2>Hard</h2>
+        <p>These projects will require a plan as they will involve complex functionality as well as DOM manipulation</p>
+        <button class="accordion">Higher or Lower</button>
+        <div class="panel">
+            <p>A deck of cards is created and shuffled before each game. The user can see one card and has to guess if they think the next card is higher or lower than the one they can see. This keeps going until the user guesses wrong, a two of a kind shows up in which case they lose, or they guess correctly for all 52 cards and win the game.</p>
+            <a href="./hard/higherOrLower/index.html">Higher or Lower Demo</a>
+        </div>
+        <button class="accordion">Dice Game</button>
+        <div class="panel">
+            <p>There are 2 versions of this game. The single player version, where the user rolls a dice and tries to get over 20. Each time the dice is rolled the number it lands on is added to a total but if a 1 is rolled then the score goes back to 0. The 2 player version is a similar concept where the player aims for a score over 20. This time you can 'hold', when a player holds the score up until then gets added to their total and then it switches to the next player. When a 1 is rolled the current score of rolls resets to 0 and its the other players go.</p>
+            <a href="./hard/diceGame/diceGame1Player/index.html">1 Player Dice Game Demo</a>
+            <a href="./hard/diceGame/diceGame2Player/index.html">2 Player Dice Game Demo</a>
+        </div>
+        <button class="accordion">Simon Says</button>
+        <div class="panel">
+            <p>The user should see 4 buttons and a start button. When the start button is pressed then 'simon' the computer will click 1 of the 4 buttons at random. The user must then click the same button 'simon' clicked. If you are incorrect you will lose and go back to level 1. Each time the user clicks the buttons in the same order as simon the level increases and another button click is added to the sequence. Reach level 18 to win.</p>
+            <a href="./hard/simonSays/index.html">Simon Says Demo</a>
+        </div>
+        <button class="accordion">Blackjack</button>
+        <div class="panel">
+            <p>The goal of blackjack is to reach 21 and beat the dealer. Before the cards are dealt you place a bet. If you win you get the amount you bet added to your total. If you lose the amount you bet gets subtracted from your total. You and the dealer are dealt 2 cards but you can only see one of the dealers cards. You then decide if you want to 'stand' and keep the cards you have, or 'hit' where you get another card. You can get as many cards as you want but you lose if you go over 21. When you 'stand' the dealer then shows their second card and keeps adding more cards if they have a total below 17. If the dealers cards add up to between 17 and 21 they can't add any more cards. If the dealer has 21 you lose, and if the dealer goes over 21 you win.</p>
+            <a href="./hard/blackjack/index.html">Blackjack Demo</a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

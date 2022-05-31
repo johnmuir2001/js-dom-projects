@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../globalStyles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>2 Player Dice Game</title>
+</head>
+<body>
+    <div id="goHomeWrap">
+        <a id="goHomeLink" href="../../../index.html">Go Home</a>
+        <img id="goHomeArrow" src="../../../images/arrow-icon.png"/>
+    </div>
+    <div class="middleButtons">
+        <button id="restart">Restart</button>
+        <img id="diceImage" src="./images/dice1.png" alt="dice image">
+        <h1 id="currentPlayer">Player 1 to Roll</h1>
+        <button id="rollDice">Roll</button>
+        <button id="holdScore">Hold</button>
+    </div>
+
+    <div class="gameStats">
+        <h1>Player 1</h1>
+        <h1 id="score">0</h1>
+        <div class="currentScore">
+            <p>CURRENT SCORE</p>
+            <h1 id="curScore">0</h1>
+        </div>
+    </div>
+    <div class="gameStats">
+        <h1>Player 2</h1>
+        <h1 id="scorePlayer2">0</h1>
+        <div class="currentScore">
+            <p>CURRENT SCORE</p>
+            <h1 id="curScorePlayer2">0</h1>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
