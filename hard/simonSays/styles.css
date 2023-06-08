@@ -12,6 +12,7 @@ body {
     flex-wrap: wrap;
     width: 340px;
     margin: 20px;
+    position: relative;
 }
 
 .button {
@@ -21,6 +22,7 @@ body {
     border: none;
     border-radius: 4px;
     cursor: default;
+    position: relative;
 }
 
 .button.active{
@@ -37,37 +39,113 @@ body {
     background-color: #f25022;
     box-shadow: 0 8px #c93a12;
     transition: 0.2s;
+    border-top-left-radius: 100%;
 }
 .red:active, .red.active {
     box-shadow: 0 0px #c93a12;
     transform: translateY(8px);
 }
+.red:active::before {
+    box-shadow: inset 0px 0px #c93a12, 0 8px white;
+}
+.red::before {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    border-top-left-radius: 100%;
+    box-shadow: inset 0px 8px #c93a12, 0 8px white;
+    transition: 0.2s;
+}
+
 .green{
     background-color: #7fba00;
     box-shadow: 0 8px #638f05;
     transition: 0.2s;
+    border-top-right-radius: 100%;
 }
 .green:active, .green.active {
     box-shadow: 0 0px #638f05;
     transform: translateY(8px);
 }
+.green:active::before {
+    box-shadow: inset 0px 0px #638f05, 0 8px white;
+}
+.green::before {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    transform: translate(0, -100%);
+    border-top-right-radius: 100%;
+    box-shadow: inset 0px 8px #638f05, 0 8px white;
+    transition: 0.2s;
+}
+
 .blue{
     background-color: #00a4ef;
     box-shadow: 0 8px #0883bc;
     transition: 0.2s;
+    border-bottom-left-radius: 100%;
 }
 .blue:active, .blue.active {
     box-shadow: 0 0px #0883bc;
     transform: translateY(8px);
 }
+.blue::before {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    top: 0;
+    left: 100%;
+    transform: translate(-100%, 0%);
+    border-bottom-left-radius: 100%;
+}
+
 .yellow{
     background-color: #ffb900;
     box-shadow: 0 8px #c28e07;
     transition: 0.2s;
+    border-bottom-right-radius: 100%;
 }
 .yellow:active, .yellow.active {
     box-shadow: 0 0px #c28e07;
     transform: translateY(8px);
+}
+.yellow::before {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 100%;
+}
+
+#score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 5px));
+    border-radius: 100%;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 #start {
